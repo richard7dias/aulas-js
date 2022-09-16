@@ -11,10 +11,14 @@
 <body>
     <h1>Olá Mundo!</h1>
     <script>
-        var n1 = window.prompt('Digite um número:')
-        var n2 = window.prompt('Digite outro número:')
+        var n1 = Number(window.prompt('Digite um número:')) // Posso colocar somente Number que ele descobre se é int ou float
+        var n2 = Number.parseFloat(window.prompt('Digite outro número:')) // Ou posso colocar assim mesmo
         var soma = n1 + n2
-        window.alert('A soma dos dois números é ' + soma + '.')
+        //window.alert('A soma dos dois números é ' + String(soma) + '.') // aqui converte novamente para String
+        // E tb usei a concatenação mais complexa
+        // Abaixo a concatenação mais resumida
+        window.alert(`A soma dos dois números é ${soma}.`)
+
     </script>
 </body>
 
