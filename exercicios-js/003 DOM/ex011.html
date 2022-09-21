@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+    <style>
+        body {
+            margin: 100px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(0, 56, 0);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Consulta de nacionalidade</h1>
+    Qual o país que você nasceu? <input type="text" name="pais" id="pais">
+    <input type="button" value="Conferir" onclick="conferir()">
+    <div id="res"></div>
+    <script>
+        function conferir() {
+            var p = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            if (p.value == 'Brasil') {
+                res.innerHTML = '<p>Você é brasieliro.</p>'
+            }
+            else {
+                res.innerHTML = '<p>Você é estrangeiro.</p>'
+            }
+        }
+    </script>
+</body>
+
+</html>
