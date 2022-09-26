@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(13, 82, 135);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.287);
+    padding: 15px;
+}
+
+header>h1 {
+    color: white;
+    text-align: center;
+}
+
+select#flista {
+    width: 150px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
